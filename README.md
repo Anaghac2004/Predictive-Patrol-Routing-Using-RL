@@ -43,9 +43,9 @@ Built using Gymnasium and Stable-Baselines3, the system demonstrates how AI can 
 *PPO agent navigating the 10×10 crime-risk grid, prioritizing high-risk (red) zones based on KDE-predicted intensities and severity-weighted rewards.*
 
 
-**Ref 2: Interactive Controls & Info Panel**  
-(https://github.com/vaibhavv2004/ParkSmart-RL/blob/main/Screenshot%202025-10-13%20115654.png)
-*Episode count, last reward, and selected slot details*
+**Ref 2: Patrol Visualization & Performance Panel**  
+https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101434.png
+*Interactive visualization showing episode count, current reward, grid coverage, and the agent’s patrol movement across the crime-risk map.*
 
 Reporting
 Finally, all findings were documented, including detailed descriptions of vulnerabilities, exploits, and remediation recommendations.
