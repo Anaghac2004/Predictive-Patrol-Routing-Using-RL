@@ -39,6 +39,7 @@ Built using Gymnasium and Stable-Baselines3, the system demonstrates how AI can 
 - https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101034.png
 - https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101103.png
 - https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101206.png
+- https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101305.png
 *PPO agent navigating the 10×10 crime-risk grid, prioritizing high-risk (red) zones based on KDE-predicted intensities and severity-weighted rewards.*
 
 
