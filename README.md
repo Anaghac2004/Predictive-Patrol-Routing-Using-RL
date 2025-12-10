@@ -35,9 +35,9 @@ Built using Gymnasium and Stable-Baselines3, the system demonstrates how AI can 
 
 ### Demo Screenshots  
 
-**Ref 1: Parking Environment & Trained Agent in Action**  
-(https://github.com/vaibhavv2004/ParkSmart-RL/blob/main/Screenshot%202025-10-13%20115026.png)
-*Agent autonomously selects high-reward (green) slots*
+**Ref 1: Crime Risk Grid & Trained PPO Agent in Action**  
+https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/Screenshot%202025-10-10%20101034.png
+*PPO agent navigating the 10×10 crime-risk grid, prioritizing high-risk (red) zones based on KDE-predicted intensities and severity-weighted rewards.*
 
 
 **Ref 2: Interactive Controls & Info Panel**  
