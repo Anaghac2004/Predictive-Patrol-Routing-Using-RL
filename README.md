@@ -1,37 +1,37 @@
 # Predictive-Patrol-Routing-Using-RL
-ParkSmart-RL: PPO-based intelligent parking slot selection using reinforcement learning. Agent optimizes cost, distance &amp; availability in a dynamic 12-slot lot. Real-time Pygame visualization with vehicle path tracing, reward heatmap &amp; interactive controls. Built with Stable-Baselines3, Gymnasium and Python.
-
+A Reinforcement Learning (PPO-based) patrol optimization system designed to improve police route planning using spatio-temporal crime forecasting.
 
 ### Objective  
-The ParkSmart-RL project implements an intelligent parking slot selection system using **Proximal Policy Optimization (PPO)** — a state-of-the-art reinforcement learning algorithm. The agent learns to autonomously choose the optimal parking spot in a dynamic 12-slot environment by balancing **cost**, **distance**, and **availability**, simulating real-world smart parking scenarios. This project demonstrates how RL can power decision-making in autonomous vehicles and smart city applications.
+This project develops a reinforcement learning framework to optimize police patrol routes across a 10×10 urban grid. Crime intensities are simulated and enhanced using Kernel Density Estimation (KDE) to model spatio-temporal risk. A Proximal Policy Optimization (PPO) agent is trained to learn patrol paths that prioritize high-risk areas by considering crime severity, forecasted risk, and coverage efficiency.
+Built using Gymnasium and Stable-Baselines3, the system demonstrates how AI can support proactive policing through adaptive route planning.
 
 ### Skills Learned  
-- Deep understanding of Reinforcement Learning (RL) and Markov Decision Processes (MDPs)  
-- Mastery of Proximal Policy Optimization (PPO) algorithm and policy gradients  
-- Designing custom Gymnasium environments for real-world problems  
-- Training stable RL agents using Stable-Baselines3  
-- Real-time 2D visualization and interactive simulation with Pygame  
-- Reward shaping and exploration-exploitation trade-offs  
+- Reinforcement Learning foundations (states, actions, rewards, episodic interaction)
+- Proximal Policy Optimization (PPO) and Actor–Critic methods
+- Custom environment design in OpenAI Gymnasium
+- Crime risk simulation & KDE-based forecasting
+- Visualization using Matplotlib (heatmaps, patrol path animations)
+- Reward shaping, exploration strategies, and PPO hyperparameter tuning
+- Performance evaluation using reward curves & grid coverage metrics
 
 ### Tools & Technologies Used  
-- **Python 3.13** – Core programming language  
-- **Stable-Baselines3** – PPO implementation  
-- **Gymnasium** – RL environment framework  
-- **Pygame** – Real-time visualization engine  
-- **NumPy** – State processing and normalization  
+- Python 3.x
+- Gymnasium – Custom RL environment
+- Stable-Baselines3 (PPO) – Agent training
+- NumPy, SciPy – KDE, noise simulation, state encoding
+- Matplotlib – Heatmaps & agent movement visualization
+- Jupyter Notebook / VS Code – Experimentation & debugging
 
 ### Key Features  
-- 12-slot dynamic parking environment with random cost, distance & occupancy  
-- PPO agent trained for 15,000 timesteps  
-- Interactive Pygame visualization (900×500) with:  
-  → Vehicle movement & path tracing  
-  → Reward-based heatmap (red = bad, green = good)  
-  → Real-time slot info (cost, distance, reward)  
-- User controls:  
-  `SPACE` → Manual PPO decision  
-  `A` → Auto mode (continuous autonomous parking)  
-  `R` → Reset environment  
-  `ESC` → Exit  
+- 10×10 dynamic crime grid with temporal Gaussian noise
+- Severity-aware reward system (robbery > assault > burglary > vandalism > theft)
+- PPO agent trained for 200 episodes
+- Coverage tracking, heatmap visualization, path animation
+- Flattened risk map + normalized agent position as observations
+- Five-action movement: up, down, left, right, stay
+- Performance:
+     - Mean Reward (last 50 episodes): 110.75
+     - Max Coverage: 37–60% depending on episode
 
 ### Demo Screenshots  
 
@@ -48,7 +48,7 @@ Reporting
 Finally, all findings were documented, including detailed descriptions of vulnerabilities, exploits, and remediation recommendations.
 
 **Ref 3: Final Project Report**
-https://github.com/vaibhavv2004/ParkSmart-RL/blob/main/PROJECT%20REPORT.docx
+https://github.com/Anaghac2004/Predictive-Patrol-Routing-Using-RL/blob/main/CB.PS.I5DAS22004-RL_REPORT.doc
 
 **Ref 4: Coding part**
 https://github.com/vaibhavv2004/ParkSmart-RL/blob/main/RL_ParkSmart.py
